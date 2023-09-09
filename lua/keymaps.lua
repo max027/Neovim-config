@@ -37,9 +37,6 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- Clear highlights
 keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 
--- Close buffers
-keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
-
 -- Better paste
 keymap("v", "p", '"_dP', opts)
 
@@ -65,11 +62,6 @@ keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>ft", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
 keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
-
-
--- Comment
-keymap("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", opts)
-keymap("x", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", opts)
 
 --lsp
 keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
