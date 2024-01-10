@@ -9,3 +9,5 @@
 * tokyonight
 * pairs
 * barbar
+
+# This is old and outdated neovim config 
